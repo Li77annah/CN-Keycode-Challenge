@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  background-color: black;
+}
+
+/* flexes the items contained in the body - so all elements on the page  */
+body {
+  width: 100vw;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;  
+}
+
+header {
+  font-weight: bold;
+  font-size: 50px;
+  padding-bottom: 50px;
+}
+
+#instruction {
+  height: 20%;   
+}
+
+#textDisplay {
+  font-size: 30px;
+  color: red;
+}
+
+/* flexes the items in the container - the three divs for the three properties*/
+#container {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+/* alignment for the three properties on screen */
+#code,
+#key,
+#which {
+  flex-basis: 1;
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* styling for the 3 properties on screen */
+#codeDisplay,
+#keyDisplay,
+#whichDisplay {
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* styling for the 3 properties on screen */
+#return {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* changes font size and color to goldenrod once a key is pressed */
+.result {
+  font-size: 120px;
+  color:goldenrod;
+}
+
+#instruction {
+  display: flex;
+  align-items: center; 
+}
+
+#instruction {
+  transform: translate( 0%, 0%);
+}
+
+/* this adds animation to the instruction text and the result */
+#instruction :hover {
+  animation: rotate 1s linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* changes font colour to goldenrod once a key is pressed */
+.pressedBtn {
+  font-size: 30px;
+  color: goldenrod;
+} 

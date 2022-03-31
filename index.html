@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- this links the CSS to the HTML -->
+  <link rel="stylesheet" href="style.css">
+  <title>Keycode Generator</title>
+</head>
+<body>
+  <!-- assigns id to header -->
+  <header>Welcome to the Spinning Key Code Generator</header>
+
+<!-- assigns id to div containing h2 -->
+  <div id = "instruction">
+     <!-- assigns id to h2 -->
+    <h2 id = "textDisplay"> Hover mouse HERE and press any key. 
+    </h2>
+  </div>
+
+  <!-- creates container for events-->
+  <!-- each event in a separate div -->
+  <div id = "container">
+    <div id = "code">
+      <p id = "codeDisplay"> </p>
+      <p id = "return">event.code</p>
+    </div>
+    <div id = "key">
+      <p id = "keyDisplay"></p>
+      <p id = "return">event.key</p>
+    </div>
+    <div id = "which">
+      <p id = "whichDisplay"></p>
+      <p id = "return">event.which</p>
+    </div>
+
+  </div>
+<!-- this links the JS file to the html -->
+  <script src="app.js"></script>
+</body>
+</html>
